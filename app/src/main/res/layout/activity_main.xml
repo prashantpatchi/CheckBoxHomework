@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="win.prashant.checkboxhomework.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <CheckBox
+        android:id="@+id/checkBoxElectronic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="28dp"
+        android:text="Eclectronic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxLaptop"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="48dp"
+        android:text="Laptop"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMobile" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="184dp"
+        android:text="Fashion"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxLaptop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="264dp"
+        android:text="Men"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxFashion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Women"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Mobile"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxLaptop"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxElectronic"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginTop="62dp"
+        android:text="12000"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxLaptop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxElectronic" />
+
+    <TextView
+        android:id="@+id/textViewLaptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="28dp"
+        android:text="15000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMobile"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMobile" />
+
+    <TextView
+        android:id="@+id/textViewMen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:text="8522"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="77dp"
+        android:text="4571"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTotalamount"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMen"
+        app:layout_constraintTop_toTopOf="@+id/textViewMen" />
+
+    <Button
+        android:id="@+id/buttonTotalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginStart="5dp"
+        android:text="Total Amount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDisplayAmount"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDisplayAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginTop="33dp"
+        android:text="DisplayAmount"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTotalamount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTotalamount"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxWomen" />
+
+</android.support.constraint.ConstraintLayout>
